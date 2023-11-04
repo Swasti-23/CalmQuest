@@ -1,0 +1,43 @@
+.icon-button {
+  -webkit-tap-highlight-color: transparent;
+  align-items: center;
+  border-radius: 50%;
+  border: var(--border-width-1) solid var(--color-ground);
+  display: flex;
+  height: var(--cmp-icon-button-radius);
+  justify-content: center;
+  outline: 0;
+  stroke: var(--color-ground);
+  transition-duration: var(--time-0);
+  transition-property: background-color, box-shadow, stroke, transform;
+  transition-timing-function: var(--easing-standard);
+  width: var(--cmp-icon-button-radius);
+}
+@media (min-width: 768px) {
+  .icon-button:focus,
+  .icon-button:hover {
+    background-color: var(--color-ground);
+    stroke: var(--color-blue-dark);
+  }
+}
+
+.icon-button svg {
+  --radius: calc(var(--cmp-icon-button-radius) / 8 * 3);
+
+  fill: none;
+  height: var(--radius);
+  pointer-events: none; /* Fixes bug with silent button */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: var(--border-width-1);
+  width: var(--radius);
+}
+
+.icon-button--slide-in {
+  animation-direction: reverse;
+  animation-duration: var(--time-1);
+  animation-fill-mode: forwards;
+  animation-name: slide-down;
+  animation-timing-function: var(--easing-standard);
+  transform: translateY(100vh);
+}

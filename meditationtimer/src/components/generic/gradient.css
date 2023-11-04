@@ -1,0 +1,55 @@
+.gradient__layer {
+  animation-duration: var(--time-2);
+  animation-name: fade-in;
+  animation-timing-function: var(--easing-standard);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.gradient__layer--no-animate {
+  animation: 0;
+}
+
+.gradient__layer--0 {
+  background-image: linear-gradient(
+    var(--gradient-angle),
+    var(--color-blue-light),
+    var(--color-pink)
+  );
+}
+
+.gradient__layer--1 {
+  background-image: linear-gradient(
+    var(--gradient-angle),
+    var(--color-blue),
+    var(--color-blue-dark)
+  );
+}
+
+.gradient__layer--2 {
+  background-image: linear-gradient(
+    var(--gradient-angle),
+    var(--color-purple),
+    var(--color-red)
+  );
+}
+
+.gradient__layer--3 {
+  background-image: linear-gradient(
+    var(--gradient-angle),
+    var(--color-green),
+    var(--color-purple)
+  );
+}
+
+.gradient__layer--4 {
+  background-image: linear-gradient(
+    var(--gradient-angle),
+    var(--color-pink),
+    var(--color-yellow)
+  );
+}

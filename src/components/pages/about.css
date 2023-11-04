@@ -1,0 +1,27 @@
+.about {
+  animation-duration: var(--time-1);
+  animation-fill-mode: forwards;
+  animation-timing-function: var(--easing-standard);
+}
+
+.about__body {
+  animation-duration: var(--time-1);
+  animation-fill-mode: forwards;
+  animation-timing-function: var(--easing-standard);
+  margin: var(--space-3) var(--space-1) 0;
+  max-width: 32rem;
+}
+
+.about--transition-in .about__body {
+  animation-direction: reverse;
+  animation-name: slide-right;
+}
+
+.about--transition-out {
+  animation-name: slide-right;
+}
+
+.about__link,
+.about__link:hover {
+  color: var(--color-ground-more);
+}

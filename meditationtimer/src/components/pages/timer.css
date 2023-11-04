@@ -1,0 +1,14 @@
+.timer {
+  animation-duration: var(--time-1);
+  animation-fill-mode: forwards;
+  animation-timing-function: var(--easing-standard);
+}
+
+.timer--transition-in {
+  animation-direction: reverse;
+  animation-name: slide-right;
+}
+
+.timer--transition-out {
+  animation-name: slide-right;
+}

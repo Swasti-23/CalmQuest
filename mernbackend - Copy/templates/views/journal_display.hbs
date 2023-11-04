@@ -1,0 +1,16 @@
+<!-- templates/views/journal_display.hbs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Journal Entries</title>
+</head>
+<body>
+    <h1>Journal Entries</h1>
+
+    <ul>
+        {{#each journalEntries}}
+            <li>{{this.text}} ({{formatDate this.timestamp}})</li>
+        {{/each}}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,129 @@
+.custom-timer {
+  animation-duration: var(--time-1);
+  animation-fill-mode: forwards;
+  animation-timing-function: var(--easing-standard);
+}
+
+.custom-timer__number-button {
+  -webkit-tap-highlight-color: transparent;
+  flex-basis: 33.3%;
+  font-size: var(--font-size-1);
+  outline: 0;
+  padding: var(--space-1);
+}
+
+.custom-timer__delete-button {
+  -webkit-tap-highlight-color: transparent;
+  bottom: 0;
+  margin-right: var(--space-3);
+  outline: 0;
+  position: absolute;
+  right: 0;
+  stroke: var(--color-ground);
+  top: 0;
+  transition: transform var(--time-0) var(--easing-standard);
+}
+
+.custom-timer--transition-in .custom-timer__number-button {
+  -webkit-tap-highlight-color: transparent;
+  animation-duration: var(--time-1);
+  animation-fill-mode: forwards;
+  animation-timing-function: var(--easing-standard);
+  animation-direction: reverse;
+  animation-name: slide-down;
+  outline: 0;
+  transform: translateY(-100vh);
+}
+
+.custom-timer__number-button:nth-child(1) {
+  animation-delay: var(--time-1) / 10;
+}
+.custom-timer__number-button:nth-child(2) {
+  animation-delay: calc(var(--time-1) / 10 * 2);
+}
+.custom-timer__number-button:nth-child(3) {
+  animation-delay: calc(var(--time-1) / 10 * 3);
+}
+.custom-timer__number-button:nth-child(4) {
+  animation-delay: calc(var(--time-1) / 10 * 4);
+}
+.custom-timer__number-button:nth-child(5) {
+  animation-delay: calc(var(--time-1) / 10 * 5);
+}
+.custom-timer__number-button:nth-child(6) {
+  animation-delay: calc(var(--time-1) / 10 * 6);
+}
+.custom-timer__number-button:nth-child(7) {
+  animation-delay: calc(var(--time-1) / 10 * 7);
+}
+.custom-timer__number-button:nth-child(8) {
+  animation-delay: calc(var(--time-1) / 10 * 8);
+}
+.custom-timer__number-button:nth-child(9) {
+  animation-delay: calc(var(--time-1) / 10 * 9);
+}
+.custom-timer__number-button:nth-child(10) {
+  animation-delay: calc(var(--time-1) / 10 * 10);
+}
+
+.custom-timer--transition-out-left {
+  animation-name: slide-left;
+}
+
+.custom-timer--transition-out-right {
+  animation-name: slide-right;
+}
+
+.custom-timer__body {
+  width: 100%;
+  max-width: 40rem;
+}
+
+.custom-timer__delete-button:disabled {
+  transform: translateX(50vw);
+}
+
+.custom-timer__start-button:disabled {
+  transform: translateY(10rem);
+}
+
+.custom-timer--transition-out-left .custom-timer__delete-button:disabled,
+.custom-timer--transition-out-left .custom-timer__start-button:disabled,
+.custom-timer--transition-out-right .custom-timer__delete-button:disabled,
+.custom-timer--transition-out-right .custom-timer__start-button:disabled {
+  display: none;
+}
+
+.custom-timer--transition-out-zoom {
+  animation-name: zoom-out;
+}
+
+.custom-timer--transition-out-zoom .custom-timer__delete-button:disabled,
+.custom-timer--transition-out-zoom .custom-timer__start-button:disabled {
+  display: none;
+}
+
+.custom-timer__number-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.custom-timer__output-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.custom-timer__time-display {
+  animation-direction: reverse;
+  animation-duration: var(--time-1);
+  animation-fill-mode: forwards;
+  animation-name: slide-down;
+  animation-timing-function: var(--easing-standard);
+  display: flex;
+  font-size: var(--font-size-2);
+  justify-content: center;
+  margin: var(--space-3);
+}

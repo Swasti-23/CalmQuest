@@ -1,0 +1,15 @@
+.controls {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-3);
+}
+
+.controls > :not(:last-child) {
+  margin-right: var(--space-3);
+}
+
+.controls > :first-child:nth-last-child(1) {
+  margin: 0 auto;
+}

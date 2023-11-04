@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Journal Entries</title>
+</head>
+<body>
+    <h1>Journal Entries</h1>
+    <!-- Add a link to create a new journal entry -->
+    <a href="/journal-entry">Create a New Journal Entry</a>
+    
+    <ul>
+        {{#each journalEntries}}
+            <li>
+                <h2>{{title}}</h2>
+                <p>{{content}}</p>
+                <p>Date: {{date}}</p>
+            </li>
+        {{/each}}
+    </ul>
+</body>
+</html>
