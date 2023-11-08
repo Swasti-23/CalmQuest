@@ -10,8 +10,7 @@ Welcome to the CalmQuest! This application is designed to help you maintain a jo
 To get started with the WebApp, follow these steps:
 
 1. Clone the repository to your local machine:
-   ```bash
-echo "Hello, world!"
+   ```bash echo "Hello, world!"
 
 2. Navigate to the project directory:
 3. Install the required dependencies:
