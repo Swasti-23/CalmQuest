@@ -9,15 +9,29 @@ Welcome to the CalmQuest! This application is designed to help you maintain a jo
 ## Getting Started
 To get started with the WebApp, follow these steps:
 
+1. Clone the repository to your local machine:
+   ```bash
+#!/bin/bash
+
+# This is a Bash code block.
+echo "Hello, world!"
+
+2. Navigate to the project directory:
+3. Install the required dependencies:
+4. Start the application:
+
 The application will be accessible in your web browser at http://localhost:3000. You can now begin using the app to maintain a journal, set wellness goals, and use the meditation timer.
 
 ## Features
 
 ### 1. Meditation Zone
+The Meditation Zone allows you to meditate by setting time intervals, relaxing meditation sounds and breathing guide. 
 
 ### 2. Journal
+The Journal feature allows you to create and maintain a digital journal. You can write and store your thoughts, ideas, and reflections.
 
 ### 3. Wellness Goals
+The Wellness Goals feature allows you to set and track your wellness goals.
 
 ## Contributing
 We welcome contributions from the community to improve and enhance the WebApp. If you would like to contribute, please follow these steps:
