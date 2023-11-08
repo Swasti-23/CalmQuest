@@ -11,12 +11,17 @@ To get started with the WebApp, follow these steps:
 
 1. Clone the repository to your local machine:
    ```bash
-   echo "Hello, world!"
-
+   git clone https://github.com/Swasti-23/CalmQuest.git
 2. Navigate to the project directory:
+   ```bash
+   cd CalmQuest
 3. Install the required dependencies:
+   ```bash
+   npm install requirements.txt
 4. Start the application:
-
+   ```bash
+   npm run dev
+   
 The application will be accessible in your web browser at http://localhost:3000. You can now begin using the app to maintain a journal, set wellness goals, and use the meditation timer.
 
 ## Features
