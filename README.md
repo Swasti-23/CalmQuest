@@ -11,7 +11,6 @@ To get started with the WebApp, follow these steps:
 
 1. Clone the repository to your local machine:
    ```bash
-#!/bin/bash
 echo "Hello, world!"
 
 2. Navigate to the project directory:
