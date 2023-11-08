@@ -6,12 +6,13 @@ const session = require("express-session"); // Add the session package
 require("./db/conn");
 const Register = require("./models/registers");
 const Journal = require("./models/journal");
-
+const Task = require("./models/task");
 const port = process.env.PORT || 3000;
 
 const static_path = path.join(__dirname, "../public");
 const template_path = path.join(__dirname, "../templates/views");
 const partials_path = path.join(__dirname, "../templates/partials");
+
 
 
 app.use(express.json());
@@ -152,7 +153,9 @@ app.get("/dashboard", (req, res) => {
     }
 });
 
-
+app.get("/todo", (req, res) => {
+    res.render("todo"); // Assuming "todo.hbs" is your Handlebars template file
+});
 
 
 app.listen(port, () => {
