@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Journal Entries</title>
+    <link rel="stylesheet" href="css/journal-entries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <h1>Journal Entries</h1>
+    <!-- Add a link to create a new journal entry -->
+    <a class="inline-block-links" required style=" margin-left: 475px; text-decoration: none;" href="/journal-entry">Create a New Journal Entry</a>
+    <p style="margin-left: 415px; margin-top: 20px; font-size: large;">Previous Entries:</p>
+    <div class="all">
+    <ul>
+        {{#each journalEntries}}
+            <li class="rectangle">
+                <h4>{{title}}</h4>
+                <p>{{content}}</p>
+                <p class="date">Date: {{toLocaleDateString date}}</p>
+            </li>
+        {{/each}}
+    </ul>
+</div>
+    
+    
+    
+</body>
+</html>
