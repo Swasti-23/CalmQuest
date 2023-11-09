@@ -114,18 +114,46 @@ app.post("/journal-entry", async (req, res) => {
     }
 });
 
+// app.get("/journal-entries", async (req, res) => {
+//     try {
+//         // Retrieve the user's ObjectId from the session
+//         const userId = req.session.user._id;
+
+//         const journalEntries = await Journal.find({ user: userId });
+
+//         res.render("journal-entries", { journalEntries });
+//     } catch (error) {
+//         res.status(500).send("Error fetching journal entries");
+//     }
+// });
 app.get("/journal-entries", async (req, res) => {
     try {
         // Retrieve the user's ObjectId from the session
-        const userId = req.session.user._id;
+        const userId = req.session.user ? req.session.user._id : null;
+
+        console.log("User ID:", userId);
+
+        if (!userId) {
+            console.error("User ID not found in session.");
+            return res.redirect("/login"); // Redirect to login if user is not authenticated
+        }
 
         const journalEntries = await Journal.find({ user: userId });
 
+        console.log("Journal Entries:", journalEntries);
+
         res.render("journal-entries", { journalEntries });
     } catch (error) {
-        res.status(500).send("Error fetching journal entries");
+        console.error("Error fetching journal entries:", error);
+        res.status(500).send("Error fetching journal entries: " + error.message);
     }
 });
+
+hbs.registerHelper('toLocaleDateString', function(date) {
+    return new Date(date).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+});
+
+
 // ...
 
 // Route for logging out

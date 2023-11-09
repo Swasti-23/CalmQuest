@@ -181,6 +181,7 @@ header .play-button{
   border-radius: 6px;
   cursor: pointer;
 }
+
 @media (max-width:850px) {
   header .navbar{
     flex-direction: column;
@@ -209,3 +210,4 @@ header .play-button{
     padding: 15px 10px;
 }
 }
+
