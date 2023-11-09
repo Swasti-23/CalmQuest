@@ -24,22 +24,35 @@ To get started with the WebApp, follow these steps:
 3. Install the required dependencies:
    ```bash
    npm install requirements.txt
-4. Start the application:
+4. Nagigate to the main directory:
+   ```bash
+   cd main
+5. Start the application:
    ```bash
    npm run dev
    
 The application will be accessible in your web browser at http://localhost:3000. You can now begin using the app to maintain a journal, set wellness goals, and use the meditation timer.
+![login](login.png)
+![register](register.png)
 
 ## Features <a name="features"></a>
 
 ### 1. Meditation Zone
 The Meditation Zone allows you to meditate by setting time intervals, relaxing meditation sounds and breathing guide. 
 
+![timer](timer.png)
+
 ### 2. Journal
 The Journal feature allows you to create and maintain a digital journal. You can write and store your thoughts, ideas, and reflections.
 
+![journal entries](journal-entries.png)
+
+![journal entry](journalEntry.png)
+
 ### 3. Wellness Goals
 The Wellness Goals feature allows you to set and track your wellness goals.
+
+![goals](goals.png)
 
 ## Contributing <a name="contributing"></a>
 We welcome contributions from the community to improve and enhance the WebApp. If you would like to contribute, please follow these steps:
