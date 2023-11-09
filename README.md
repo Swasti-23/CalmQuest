@@ -21,12 +21,12 @@ To get started with the WebApp, follow these steps:
 2. Navigate to the project directory:
    ```bash
    cd CalmQuest
-3. Install the required dependencies:
-   ```bash
-   npm install requirements.txt
-4. Nagigate to the main directory:
+3. Nagigate to the main directory:
    ```bash
    cd main
+4. Install the required dependencies:
+   ```bash
+   npm install 
 5. Start the application:
    ```bash
    npm run dev
